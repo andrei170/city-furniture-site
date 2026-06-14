@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City Furniture &amp; Appliances | Proudly Canadian Since 1976</title>
+<meta name="description" content="City Furniture & Appliances. Family-owned and proudly Canadian since 1976. Furniture, mattresses, appliances and electronics, with local stores, local stock, fast delivery, and flexible financing across Western Canada.">
+<meta name="robots" content="noindex,nofollow"><meta property="og:image" content="https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg"><meta property="og:site_name" content="City Furniture &amp; Appliances"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0C4DA2">
+<meta property="og:type" content="website">
+<meta property="og:title" content="City Furniture & Appliances | Proudly Canadian Since 1976">
+<meta property="og:description" content="Family-owned since 1976. Shop your local store, with local stock and fast delivery across Western Canada.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23ed1b2f'/%3E%3Ctext x='50' y='64' font-family='Arial,sans-serif' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3ECFA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"><link rel="canonical" href="https://andrei170.github.io/city-furniture-site/">
+<style>
+  .hero{position:relative;min-height:90vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+  .hero-slides{position:absolute;inset:0}
+  .hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:heroCF 24s infinite}
+  .hero-slide.s1{background-image:url('assets/hero-store.jpg');background-position:center 42%;animation-delay:0s}
+  .hero-slide.s2{background-image:url('assets/cat-living.jpg');animation-delay:8s}
+  .hero-slide.s3{background-image:url('assets/showroom.jpg');animation-delay:16s}
+  @keyframes heroCF{0%{opacity:0;transform:scale(1.07)}3%{opacity:1}29%{opacity:1;transform:scale(1)}34%{opacity:0}100%{opacity:0}}
+  @keyframes heroUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  .hero-scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,24,59,.92) 0%,rgba(8,36,84,.72) 42%,rgba(8,36,84,.4) 72%,rgba(8,36,84,.62) 100%)}
+  .hero-scrim::after{content:"";position:absolute;inset:0;background:radial-gradient(125% 85% at 16% 32%,transparent 42%,rgba(4,16,40,.5) 100%)}
+  .hero-scrim2{position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,24,59,.85) 0%,transparent 38%)}
+  .hero .wrap{position:relative;z-index:2;width:100%;padding-bottom:64px;padding-top:56px}
+  .hero .est-tag{animation:heroUp .7s .1s both}
+  .hero h1{animation:heroUp .8s .25s both}
+  .hero .hero-sub{animation:heroUp .8s .4s both}
+  .hero .hero-cta{animation:heroUp .8s .55s both}
+  .hero .hero-strip{animation:heroUp .8s .7s both}
+  .hero .est-tag{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.4);border-radius:40px;padding:7px 16px;font-size:.8rem;font-weight:600;letter-spacing:.04em;margin-bottom:22px;backdrop-filter:blur(4px);background:rgba(255,255,255,.08)}
+  .hero h1{color:#fff;max-width:16ch;text-shadow:0 2px 30px rgba(0,0,0,.3)}
+  .hero-sub{font-size:1.22rem;color:#e9eefb;max-width:42ch;margin:20px 0 30px;line-height:1.6}
+  .hero-sub b{color:#fff}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero-strip{display:flex;flex-wrap:wrap;gap:14px 34px;margin-top:42px;padding-top:26px;border-top:1px solid rgba(255,255,255,.18)}
+  .hero-strip .hs{display:flex;align-items:center;gap:11px;font-size:.92rem;color:#dbe3f6}
+  .hero-strip .hs b{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:600;color:#fff;line-height:1}
+  .scrolldown{position:absolute;right:34px;bottom:30px;z-index:2;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#cbd5ee;writing-mode:vertical-rl;display:flex;align-items:center;gap:10px;opacity:.8}
+  .scrolldown::after{content:"";width:1px;height:40px;background:rgba(255,255,255,.5);animation:drop 1.8s infinite}
+  @keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+  @media(max-width:760px){.hero{min-height:90vh}.hero-sub{font-size:1.08rem}.scrolldown{display:none}.hero-scrim{background:linear-gradient(90deg,rgba(8,36,84,.82),rgba(8,36,84,.45))}}
+  /* Service strip */
+  .svc{background:linear-gradient(180deg,#fff,var(--paper));border-bottom:1px solid var(--line)}
+  .svc .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:30px 30px}
+  .svc .it{display:flex;align-items:center;gap:16px;padding:6px 26px;position:relative}
+  .svc .it+.it::before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:1px;background:var(--line)}
+  .svc .it .ic-box{width:58px;height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex:none;background:linear-gradient(150deg,#ffffff,#e9eefa);border:1px solid #e2e8f5;box-shadow:0 10px 20px rgba(12,63,135,.12),inset 0 1px 0 #fff}
+  .svc .it .ic-box.red{color:var(--accent)}
+  .svc .it .ic-box.blue{color:var(--ink2)}
+  .svc .it b{display:block;font-size:1.02rem;color:var(--ink);margin-bottom:2px}
+  .svc .it span{font-size:.83rem;color:var(--muted)}
+  @media(max-width:860px){.svc .wrap{grid-template-columns:1fr 1fr;gap:20px 0;padding:24px}.svc .it{padding:8px 18px}.svc .it:nth-child(odd)::before{display:none}}
+  @media(max-width:480px){.svc .wrap{grid-template-columns:1fr;gap:16px}.svc .it+.it::before{display:none}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://andrei170.github.io/city-furniture-site/#org","name":"City Furniture & Appliances","url":"https://andrei170.github.io/city-furniture-site/","logo":"https://andrei170.github.io/city-furniture-site/assets/cfa-logo.png","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","slogan":"We do not sell. We help you buy.","foundingDate":"1976","telephone":"+1-833-822-9306","areaServed":["British Columbia","Alberta"],"sameAs":["https://www.facebook.com/cityfurniturecanada","https://www.instagram.com/cityfurniturecanada"]},{"@type":"WebSite","@id":"https://andrei170.github.io/city-furniture-site/#website","url":"https://andrei170.github.io/city-furniture-site/","name":"City Furniture & Appliances","publisher":{"@id":"https://andrei170.github.io/city-furniture-site/#org"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://andrei170.github.io/city-furniture-site/shop.html?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"FurnitureStore","@id":"https://andrei170.github.io/city-furniture-site/#store","name":"City Furniture & Appliances","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","url":"https://andrei170.github.io/city-furniture-site/","telephone":"+1-833-822-9306","priceRange":"$","foundingDate":"1976","parentOrganization":{"@id":"https://andrei170.github.io/city-furniture-site/#org"},"department":[{"@type":"FurnitureStore","name":"City Furniture & Appliances - Prince George","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Prince George","addressRegion":"BC","addressCountry":"CA"},"areaServed":"Prince George"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - Kamloops","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Kamloops","addressRegion":"BC","addressCountry":"CA"},"areaServed":"Kamloops"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - West Kelowna","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"West Kelowna","addressRegion":"BC","addressCountry":"CA"},"areaServed":"West Kelowna"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - Quesnel","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Quesnel","addressRegion":"BC","addressCountry":"CA"},"areaServed":"Quesnel"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - Williams Lake","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Williams Lake","addressRegion":"BC","addressCountry":"CA"},"areaServed":"Williams Lake"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - Vanderhoof","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Vanderhoof","addressRegion":"BC","addressCountry":"CA"},"areaServed":"Vanderhoof"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - Terrace","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Terrace","addressRegion":"BC","addressCountry":"CA"},"areaServed":"Terrace"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - Salmon Arm","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Salmon Arm","addressRegion":"BC","addressCountry":"CA"},"areaServed":"Salmon Arm"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - Merritt","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Merritt","addressRegion":"BC","addressCountry":"CA"},"areaServed":"Merritt"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - Grande Prairie","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Grande Prairie","addressRegion":"AB","addressCountry":"CA"},"areaServed":"Grande Prairie"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - Fort McMurray","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Fort McMurray","addressRegion":"AB","addressCountry":"CA"},"areaServed":"Fort McMurray"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - Lethbridge","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Lethbridge","addressRegion":"AB","addressCountry":"CA"},"areaServed":"Lethbridge"},{"@type":"FurnitureStore","name":"City Furniture & Appliances - Whitecourt","telephone":"+1-833-822-9306","image":"https://andrei170.github.io/city-furniture-site/assets/hero-store.jpg","address":{"@type":"PostalAddress","addressLocality":"Whitecourt","addressRegion":"AB","addressCountry":"CA"},"areaServed":"Whitecourt"}]}]}</script></head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<svg class="sprite" aria-hidden="true"><defs><symbol id="i-truck" viewBox="0 0 24 24"><path fill="currentColor" d="m9.564 8.73l.515 1.863c.485 1.755.727 2.633 1.44 3.032c.713.4 1.618.164 3.428-.306l1.92-.5c1.81-.47 2.715-.705 3.127-1.396c.412-.692.17-1.57-.316-3.325l-.514-1.862c-.485-1.756-.728-2.634-1.44-3.033c-.714-.4-1.619-.164-3.429.307l-1.92.498c-1.81.47-2.715.706-3.126 1.398c-.412.691-.17 1.569.315 3.324"/><path fill="currentColor" d="M2.277 5.247a.75.75 0 0 1 .924-.522l1.703.472A2.71 2.71 0 0 1 6.8 7.075l2.151 7.786l.158.547a2.96 2.96 0 0 1 1.522 1.267l.31-.096l8.87-2.305a.75.75 0 1 1 .378 1.452l-8.837 2.296l-.33.102c-.006 1.27-.883 2.432-2.21 2.776c-1.59.414-3.225-.502-3.651-2.044s.518-3.129 2.108-3.542q.119-.03.237-.052L5.354 7.474a1.21 1.21 0 0 0-.85-.831L2.8 6.17a.75.75 0 0 1-.523-.923"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M3.378 5.082C3 5.62 3 7.22 3 10.417v1.574c0 5.638 4.239 8.375 6.899 9.536c.721.315 1.082.473 2.101.473c1.02 0 1.38-.158 2.101-.473C16.761 20.365 21 17.63 21 11.991v-1.574c0-3.198 0-4.797-.378-5.335c-.377-.537-1.88-1.052-4.887-2.081l-.573-.196C13.595 2.268 12.812 2 12 2s-1.595.268-3.162.805L8.265 3c-3.007 1.03-4.51 1.545-4.887 2.082M15.06 10.5a.75.75 0 0 0-1.12-.999l-3.011 3.374l-.87-.974a.75.75 0 0 0-1.118 1l1.428 1.6a.75.75 0 0 0 1.119 0z" clip-rule="evenodd"/></symbol><symbol id="i-card" viewBox="0 0 24 24"><defs><mask id="SVGBcZ8Eejn"><g fill="none"><path fill="#fff" d="M14 4h-4C6.229 4 4.343 4 3.172 5.172c-.844.843-1.08 2.057-1.146 4.078h19.948c-.066-2.021-.302-3.235-1.146-4.078C19.657 4 17.771 4 14 4m-4 16h4c3.771 0 5.657 0 6.828-1.172S22 15.771 22 12q0-.662-.002-1.25H2.002Q1.999 11.338 2 12c0 3.771 0 5.657 1.172 6.828S6.229 20 10 20"/><path fill="#000" fill-rule="evenodd" d="M5.25 16a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75m6.5 0a.75.75 0 0 1 .75-.75H14a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75" clip-rule="evenodd"/></g></mask></defs><path fill="currentColor" d="M0 0h24v24H0z" mask="url(#SVGBcZ8Eejn)"/></symbol><symbol id="i-gift" viewBox="0 0 24 24"><path fill="currentColor" d="M11.25 2c-4.219.004-6.401.08-7.786 1.464C2.08 4.85 2.004 7.031 2 11.25h4.914a4 4 0 0 1-.757-1.528C5.62 7.57 7.57 5.62 9.722 6.157c.572.143 1.09.406 1.528.757zM2 12.75c.004 4.218.08 6.4 1.464 7.785C4.85 21.92 7.031 21.995 11.25 22v-7.877A4.75 4.75 0 0 1 7 16.75a.75.75 0 0 1 0-1.5a3.25 3.25 0 0 0 3.163-2.5zM12.75 22c4.218-.005 6.4-.08 7.785-1.465c1.385-1.384 1.46-3.567 1.465-7.785h-8.163A3.25 3.25 0 0 0 17 15.25a.75.75 0 0 1 0 1.5a4.75 4.75 0 0 1-4.25-2.627zM22 11.25c-.005-4.219-.08-6.401-1.465-7.786C19.151 2.08 16.968 2.004 12.75 2v4.914a4 4 0 0 1 1.527-.757c2.153-.538 4.104 1.412 3.565 3.565a4 4 0 0 1-.756 1.528z"/><path fill="currentColor" d="M9.358 7.613a2.5 2.5 0 0 1 1.892 2.422v1.215h-1.215a2.5 2.5 0 0 1-2.422-1.892a1.44 1.44 0 0 1 1.745-1.745m3.392 2.422v1.215h1.215c1.145 0 2.144-.78 2.422-1.892a1.44 1.44 0 0 0-1.746-1.745a2.5 2.5 0 0 0-1.891 2.422"/></symbol><symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M9.153 5.408C10.42 3.136 11.053 2 12 2s1.58 1.136 2.847 3.408l.328.588c.36.646.54.969.82 1.182s.63.292 1.33.45l.636.144c2.46.557 3.689.835 3.982 1.776c.292.94-.546 1.921-2.223 3.882l-.434.507c-.476.557-.715.836-.822 1.18c-.107.345-.071.717.001 1.46l.066.677c.253 2.617.38 3.925-.386 4.506s-1.918.051-4.22-1.009l-.597-.274c-.654-.302-.981-.452-1.328-.452s-.674.15-1.328.452l-.596.274c-2.303 1.06-3.455 1.59-4.22 1.01c-.767-.582-.64-1.89-.387-4.507l.066-.676c.072-.744.108-1.116 0-1.46c-.106-.345-.345-.624-.821-1.18l-.434-.508c-1.677-1.96-2.515-2.941-2.223-3.882S3.58 8.328 6.04 7.772l.636-.144c.699-.158 1.048-.237 1.329-.45s.46-.536.82-1.182z"/></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" d="M2 9.137C2 14 6.02 16.591 8.962 18.911C10 19.729 11 20.5 12 20.5s2-.77 3.038-1.59C17.981 16.592 22 14 22 9.138S16.5.825 12 5.501C7.5.825 2 4.274 2 9.137"/></symbol><symbol id="i-flag" viewBox="0 0 24 24"><path fill="currentColor" d="M5.75 1a.75.75 0 0 1 .75.75V3.6l1.72-.344a8.7 8.7 0 0 1 4.925.452l.204.081a8 8 0 0 0 4.91.334a1.2 1.2 0 0 1 1.491 1.164v7.367c0 .644-.439 1.206-1.064 1.362l-.214.053a8.68 8.68 0 0 1-5.327-.361a8.7 8.7 0 0 0-4.924-.452L6.5 13.6v8.15a.75.75 0 0 1-1.5 0v-20A.75.75 0 0 1 5.75 1"/></symbol><symbol id="i-home" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M2.52 7.823C2 8.77 2 9.915 2 12.203v1.522c0 3.9 0 5.851 1.172 7.063S6.229 22 10 22h4c3.771 0 5.657 0 6.828-1.212S22 17.626 22 13.725v-1.521c0-2.289 0-3.433-.52-4.381c-.518-.949-1.467-1.537-3.364-2.715l-2-1.241C14.111 2.622 13.108 2 12 2s-2.11.622-4.116 1.867l-2 1.241C3.987 6.286 3.038 6.874 2.519 7.823m6.927 7.575a.75.75 0 1 0-.894 1.204A5.77 5.77 0 0 0 12 17.75a5.77 5.77 0 0 0 3.447-1.148a.75.75 0 1 0-.894-1.204A4.27 4.27 0 0 1 12 16.25a4.27 4.27 0 0 1-2.553-.852" clip-rule="evenodd"/></symbol><symbol id="i-building" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M21.25 8.5c0-1.404 0-2.107-.337-2.611a2 2 0 0 0-.552-.552c-.441-.295-1.034-.332-2.115-.336q.005.438.004.91V7.25h1a.75.75 0 0 1 0 1.5h-1v1.5h1a.75.75 0 0 1 0 1.5h-1v1.5h1a.75.75 0 0 1 0 1.5h-1v6.5h-1.5V6c0-1.886 0-2.828-.586-3.414S14.636 2 12.75 2h-2c-1.886 0-2.828 0-3.414.586S6.75 4.114 6.75 6v15.25h-1.5v-6.5h-1a.75.75 0 0 1 0-1.5h1v-1.5h-1a.75.75 0 0 1 0-1.5h1v-1.5h-1a.75.75 0 0 1 0-1.5h1V5.91q-.001-.47.004-.91c-1.081.005-1.674.042-2.115.337a2 2 0 0 0-.552.552C2.25 6.393 2.25 7.096 2.25 8.5v12.75h-.5a.75.75 0 0 0 0 1.5h20a.75.75 0 0 0 0-1.5h-.5zM9 11.75a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1-.75-.75m0 3a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1-.75-.75m2.75 3.5a.75.75 0 0 1 .75.75v2.25H11V19a.75.75 0 0 1 .75-.75M9 6.25a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5h-4A.75.75 0 0 1 9 6.25m0 3a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5h-4A.75.75 0 0 1 9 9.25" clip-rule="evenodd"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.001" cy="6" r="4" fill="currentColor"/><ellipse cx="9.001" cy="17.001" fill="currentColor" rx="7" ry="4"/><path fill="currentColor" d="M21 17c0 1.657-2.036 3-4.521 3c.732-.8 1.236-1.805 1.236-2.998c0-1.195-.505-2.2-1.239-3.001C18.962 14 21 15.344 21 17M18 6a3 3 0 0 1-4.029 2.82A5.7 5.7 0 0 0 14.714 6c0-1.025-.27-1.987-.742-2.819A3 3 0 0 1 18 6.001"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 2c-4.418 0-8 4.003-8 8.5c0 4.462 2.553 9.312 6.537 11.174a3.45 3.45 0 0 0 2.926 0C17.447 19.812 20 14.962 20 10.5C20 6.003 16.418 2 12 2m0 10a2 2 0 1 0 0-4a2 2 0 0 0 0 4" clip-rule="evenodd"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="m16.556 12.906l-.455.453s-1.083 1.076-4.038-1.862s-1.872-4.014-1.872-4.014l.286-.286c.707-.702.774-1.83.157-2.654L9.374 2.86C8.61 1.84 7.135 1.705 6.26 2.575l-1.57 1.56c-.433.432-.723.99-.688 1.61c.09 1.587.808 5 4.812 8.982c4.247 4.222 8.232 4.39 9.861 4.238c.516-.048.964-.31 1.325-.67l1.42-1.412c.96-.953.69-2.588-.538-3.255l-1.91-1.039c-.806-.437-1.787-.309-2.417.317"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><defs><mask id="SVGnNgsclOC"><g fill="none"><path fill="#fff" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10"/><path fill="#000" fill-rule="evenodd" d="M12 7.25a.75.75 0 0 1 .75.75v3.69l2.28 2.28a.75.75 0 1 1-1.06 1.06l-2.5-2.5a.75.75 0 0 1-.22-.53V8a.75.75 0 0 1 .75-.75" clip-rule="evenodd"/></g></mask></defs><path fill="currentColor" d="M0 0h24v24H0z" mask="url(#SVGnNgsclOC)"/></symbol><symbol id="i-tag" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M2.123 12.816c.287 1.003 1.06 1.775 2.605 3.32l1.83 1.83C9.248 20.657 10.592 22 12.262 22c1.671 0 3.015-1.344 5.704-4.033c2.69-2.69 4.034-4.034 4.034-5.705c0-1.67-1.344-3.015-4.033-5.704l-1.83-1.83c-1.546-1.545-2.318-2.318-3.321-2.605c-1.003-.288-2.068-.042-4.197.45l-1.228.283c-1.792.413-2.688.62-3.302 1.233S3.27 5.6 2.856 7.391l-.284 1.228c-.491 2.13-.737 3.194-.45 4.197m8-5.545a2.017 2.017 0 1 1-2.852 2.852a2.017 2.017 0 0 1 2.852-2.852m8.928 4.78l-6.979 6.98a.75.75 0 0 1-1.06-1.061l6.978-6.98a.75.75 0 0 1 1.061 1.061" clip-rule="evenodd"/></symbol><symbol id="i-cart" viewBox="0 0 24 24"><path fill="currentColor" d="M2.237 2.288a.75.75 0 1 0-.474 1.423l.265.089c.676.225 1.124.376 1.453.529c.312.145.447.262.533.382s.155.284.194.626c.041.361.042.833.042 1.546v2.672c0 1.367 0 2.47.117 3.337c.12.9.38 1.658.982 2.26c.601.602 1.36.86 2.26.981c.866.117 1.969.117 3.336.117H18a.75.75 0 0 0 0-1.5h-7c-1.435 0-2.436-.002-3.192-.103c-.733-.099-1.122-.28-1.399-.556c-.235-.235-.4-.551-.506-1.091h10.12c.959 0 1.438 0 1.814-.248s.565-.688.943-1.57l.428-1c.81-1.89 1.215-2.834.77-3.508S18.506 6 16.45 6H5.745a9 9 0 0 0-.047-.833c-.055-.485-.176-.93-.467-1.333c-.291-.404-.675-.66-1.117-.865c-.417-.194-.946-.37-1.572-.58zM7.5 18a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3"/></symbol><symbol id="i-ig" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></symbol><symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02"/></symbol><symbol id="i-leaf" viewBox="0 0 512 512"><path d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4 2.4-7.6 20.1-67.3 20.1-67.3s-47.7 10-57.7 12.5c-7.5 2.4-10-2.5-12.5-7.5s-15-32.4-15-32.4-52.6 59.9-55.1 62.3c-10 7.5-20.1 0-17.6-10 0-10 27.6-129.6 27.6-129.6s-30.1 17.4-40.1 22.4c-7.5 5-12.6 5-17.6-5C293.5 72.3 255.9 0 255.9 0s-37.5 72.3-42.5 79.8c-5 10-10 10-17.6 5-10-5-40.1-22.4-40.1-22.4S183.3 182 183.3 192c2.5 10-7.5 17.5-17.6 10-2.5-2.5-55.1-62.3-55.1-62.3S98.1 167 95.6 172s-5 9.9-12.5 7.5C73 177 25.4 167 25.4 167s17.6 59.7 20.1 67.3c2.4 6 5 12.5-5 17.4L23 259.3s102.6 89.9 105.2 92.4c5.1 5 10 7.5 5.1 22.5-5.1 15-10.1 35.1-10.1 35.1s95.2-20.1 105.3-22.6c8.7-.9 18.3 2.5 18.3 12.5S241 512 241 512h30s-5.8-102.7-5.8-112.8 9.5-13.4 18.4-12.5c10 2.5 105.2 22.6 105.2 22.6s-5-20.1-10-35.1 0-17.5 5-22.5z"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></symbol><symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-11"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></symbol></defs></svg>
+
+<div class="anno">
+  <svg class="ic ic-fill maple"><use href="#i-leaf"></use></svg>
+  <b>Our 50th Anniversary Event is on.</b> Flexible financing available at every store.
+</div>
+
+<nav class="bar" id="nav" data-overhero="1">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/cfa-logo.png" alt="City Furniture &amp; Appliances" class="brand-logo">
+    </a>
+    <form class="nav-search" onsubmit="return false">
+      <svg class="ic ic-line si"><use href="#i-search"></use></svg>
+      <input type="search" placeholder="Search furniture, mattresses, appliances" aria-label="Search">
+    </form>
+    <div class="nav-links">
+      <a href="shop.html">Shop</a>
+      <a href="index.html#local">Your local store</a>
+      <a href="financing.html">Financing</a>
+      <a href="story.html">Our story</a>
+      <a href="business.html">Builders &amp; business</a>
+      <a href="locations.html">Locations</a>
+    </div>
+    <div class="nav-right">
+      <button class="store-btn" id="storeBtn">
+        <span>
+          <span class="lbl">Shopping at</span>
+          <span class="val"><span id="storeBtnCity">Prince George</span> <svg class="ic ic-line"><use href="#i-chev"></use></svg></span>
+        </span>
+      </button>
+      <a href="#" class="icon-btn" data-demo aria-label="Cart"><svg class="ic"><use href="#i-cart"></use></svg><span class="badge">0</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="top">
+    <img src="assets/cfa-logo.png" alt="City Furniture &amp; Appliances">
+    <button class="close" id="menuClose" aria-label="Close">&times;</button>
+  </div>
+  <a href="shop.html">Shop</a>
+  <a href="financing.html">Financing</a>
+  <a href="story.html">Our story</a>
+  <a href="business.html">Builders &amp; business</a>
+  <a href="locations.html">Locations</a>
+  <a href="deals.html">Deals</a><a href="careers.html">Careers</a><a href="tel:+18338229306">Call +1 833 822 9306</a>
+</div>
+
+<!-- Hero -->
+<header class="hero" id="main">
+  <div class="hero-slides">
+    <div class="hero-slide s1"></div>
+    <div class="hero-slide s2"></div>
+    <div class="hero-slide s3"></div>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="hero-scrim2"></div>
+  <div class="wrap">
+    <div class="est-tag"><svg class="ic ic-fill maple"><use href="#i-leaf"></use></svg> We don't sell. We help you buy. Since 1976.</div>
+    <h1>The store your family <em>trusts</em>, now at your door.</h1>
+    <p class="hero-sub">Furniture, mattresses, appliances and more, from the people your town has known for 50 years. Shop the real stock at <b id="heroStore">your Prince George</b> store, with fast local delivery.</p>
+    <div class="hero-cta">
+      <a href="shop.html" class="btn">Shop <span id="heroStore2">Prince George</span> <svg class="ic ic-line"><use href="#i-arrow"></use></svg></a>
+      <a href="locations.html" class="btn btn-outline-light">Find your store</a>
+    </div>
+    <div class="hero-strip">
+      <div class="hs"><b>50</b><span>Years<br>family-owned</span></div>
+      <div class="hs"><b>13</b><span>Locally-owned<br>stores</span></div>
+      <div class="hs"><b>2</b><span>Provinces<br>BC &amp; Alberta</span></div>
+      <div class="hs"><svg class="ic"><use href="#i-truck"></use></svg> <span>Own warehouses,<br>fast local delivery</span></div>
+    </div>
+  </div>
+  <div class="scrolldown">Scroll</div>
+</header>
+
+<!-- Service strip -->
+<div class="svc">
+  <div class="wrap">
+    <div class="it"><div class="ic-box red"><svg class="ic"><use href="#i-shield"></use></svg></div><div><b>Price Beat Guarantee</b><span>See it cheaper? We will beat it.</span></div></div>
+    <div class="it"><div class="ic-box blue"><svg class="ic"><use href="#i-truck"></use></svg></div><div><b>Fast local delivery</b><span>From our own warehouses</span></div></div>
+    <div class="it"><div class="ic-box blue"><svg class="ic"><use href="#i-card"></use></svg></div><div><b>Flexible financing</b><span>Pre-approval in minutes</span></div></div>
+    <div class="it"><div class="ic-box red"><svg class="ic ic-fill maple"><use href="#i-leaf"></use></svg></div><div><b>Family-owned</b><span>Proudly Canadian since 1976</span></div></div>
+  </div>
+</div>
+
+<!-- Brands -->
+<div class="brands">
+  <div class="wrap">
+    <span>Ashley</span><span class="sep">/</span><span>La-Z-Boy</span><span class="sep">/</span><span>Palliser</span><span class="sep">/</span><span>Serta</span><span class="sep">/</span><span>Sealy</span><span class="sep">/</span><span>Beautyrest</span><span class="sep">/</span><span>Tempur-pedic</span><span class="sep">/</span><span>Samsung</span><span class="sep">/</span><span>Maytag</span><span class="sep">/</span><span>Frigidaire</span>
+  </div>
+</div>
+
+<!-- Local store -->
+<section class="local" id="local">
+  <div class="wrap">
+    <div class="local-grid">
+      <div>
+        <div class="kicker">Shop the store nearest you</div>
+        <h2 class="shead">One brand. <em>Your</em> local store. Your local stock.</h2>
+        <p class="lead" style="margin-top:16px">Every City Furniture location is its own showroom and warehouse, run by the family that lives in your town. Pick your store once and the whole site shows what is actually in stock near you, ready for fast local delivery.</p>
+        <div class="steps">
+          <div class="step rv"><div class="n">1</div><div><h3>Find your store</h3><p>We set your nearest location, or pick it from the map. Prince George, Kamloops, Grande Prairie and more across Western Canada.</p></div></div>
+          <div class="step rv"><div class="n">2</div><div><h3>Shop local stock</h3><p>Browse the real inventory at your store, not someone else's. What you see is what is waiting on the floor and in the warehouse near you.</p></div></div>
+          <div class="step rv"><div class="n">3</div><div><h3>Buy, and we deliver</h3><p>Order online and your local team handles it from their own warehouse, with the same faces you would meet in-store.</p></div></div>
+        </div>
+      </div>
+      <div class="local-panel rv">
+        <div class="top">
+          <img loading="lazy" decoding="async" src="assets/showroom.jpg" alt="Local showroom">
+          <div class="ov"></div>
+          <div class="badge"><span class="dotpulse"></span> Open today</div>
+          <div class="nm"><div class="city" id="panelCity">Prince George</div><div class="prov" id="panelProv">British Columbia</div></div>
+        </div>
+        <div class="body">
+          <div class="lp-row"><span class="k">Hours today</span><span class="v hours-open" id="panelHours">Open until 6pm</span></div>
+          <div class="lp-row"><span class="k">In stock locally</span><span class="v"><span class="stockcount"><span class="dotpulse"></span> <span id="panelStock">3,120</span> products</span></span></div>
+          <div class="lp-row"><span class="k">Delivery</span><span class="v">From your local warehouse</span></div>
+          <div class="lp-row"><span class="k">Financing</span><span class="v">Pre-approval in minutes</span></div>
+        </div>
+        <div class="lp-foot">
+          <a href="shop.html" class="btn">Shop this store</a>
+          <button class="btn btn-ghost" id="panelSwitch">Change store</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section id="shop">
+  <div class="wrap">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <div class="shead">
+        <div class="kicker">Shop by room</div>
+        <h2>Everything for the <em>whole</em> home.</h2>
+      </div>
+      <span class="pill">Showing availability at &nbsp;<b class="storeCity">Prince George</b></span>
+    </div>
+    <div class="cat-grid">
+      <a href="shop.html?cat=living" class="cat big rv"><img loading="lazy" decoding="async" src="assets/cat-living.jpg" alt="Living room"><div class="ov"></div><div class="go"><svg class="ic ic-line"><use href="#i-arrow-ur"></use></svg></div><div class="lbl"><h3>Living Room</h3><div class="sub">Sofas, sectionals, recliners &amp; more</div></div></a>
+      <a href="shop.html?cat=mattress" class="cat sm rv"><img loading="lazy" decoding="async" src="assets/cat-mattress.jpg" alt="Mattresses"><div class="ov"></div><div class="go"><svg class="ic ic-line"><use href="#i-arrow-ur"></use></svg></div><div class="lbl"><h3>Mattresses</h3><div class="sub">Serta, Sealy, Beautyrest</div></div></a>
+      <a href="shop.html?cat=appliance" class="cat sm rv"><img loading="lazy" decoding="async" src="assets/cat-appliances.jpg" alt="Appliances"><div class="ov"></div><div class="go"><svg class="ic ic-line"><use href="#i-arrow-ur"></use></svg></div><div class="lbl"><h3>Appliances</h3><div class="sub">Kitchen &amp; laundry</div></div></a>
+      <a href="shop.html?cat=dining" class="cat sm rv"><img loading="lazy" decoding="async" src="assets/cat-dining.jpg" alt="Dining"><div class="ov"></div><div class="go"><svg class="ic ic-line"><use href="#i-arrow-ur"></use></svg></div><div class="lbl"><h3>Dining &amp; Bedroom</h3><div class="sub">Tables, beds, storage</div></div></a>
+      <a href="shop.html" class="cat sm rv"><img loading="lazy" decoding="async" src="assets/cat-electronics.jpg" alt="Electronics"><div class="ov"></div><div class="go"><svg class="ic ic-line"><use href="#i-arrow-ur"></use></svg></div><div class="lbl"><h3>Electronics</h3><div class="sub">TVs, audio &amp; more</div></div></a>
+      <a href="shop.html" class="cat wide rv"><img loading="lazy" decoding="async" src="assets/cat-canada.jpg" alt="Made in Canada"><div class="ov"></div><div class="go"><svg class="ic ic-line"><use href="#i-arrow-ur"></use></svg></div><div class="lbl"><h3>Made in Canada <svg class="ic ic-fill maple" style="font-size:1rem"><use href="#i-leaf"></use></svg></h3><div class="sub">Locally crafted pieces, built to last</div></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- Hot deals -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <div class="shead">
+        <div class="kicker"><svg class="ic"><use href="#i-tag"></use></svg> &nbsp;Hot deals this week</div>
+        <h2>In stock now at your <em class="storeCity">Prince George</em> store.</h2>
+      </div>
+      <a href="shop.html" class="btn btn-ghost">Shop all deals <svg class="ic ic-line"><use href="#i-arrow"></use></svg></a>
+    </div>
+    <div class="prods">
+      <div class="prod rv">
+        <div class="ph"><span class="tag">Hot deal</span><img loading="lazy" decoding="async" src="assets/products/sectional.jpg" alt="Sectional"></div>
+        <div class="body"><div class="br">Signature Design by Ashley</div><div class="nm">O'Phannon 2-Piece Sectional with Chaise</div><div class="btm"><span class="pr">$1,899</span><span class="stk storeStk"><span class="dotpulse"></span> Prince George</span></div></div>
+      </div>
+      <div class="prod rv">
+        <div class="ph"><span class="tag">Bestseller</span><img loading="lazy" decoding="async" src="assets/products/mattress-br.jpg" alt="Mattress"></div>
+        <div class="body"><div class="br">Beautyrest</div><div class="nm">Alive 2.0 Medium Mattress, Queen</div><div class="btm"><span class="pr">$999</span><span class="stk storeStk"><span class="dotpulse"></span> Prince George</span></div></div>
+      </div>
+      <div class="prod rv">
+        <div class="ph"><span class="tag">Hot deal</span><img loading="lazy" decoding="async" src="assets/products/range.jpg" alt="Gas range"></div>
+        <div class="body"><div class="br">Frigidaire</div><div class="nm">30-inch Freestanding Gas Range</div><div class="btm"><span class="pr">$899</span><span class="stk storeStk"><span class="dotpulse"></span> Prince George</span></div></div>
+      </div>
+      <div class="prod rv">
+        <div class="ph"><span class="tag">Hot deal</span><img loading="lazy" decoding="async" src="assets/products/dinette.jpg" alt="Dinette set"></div>
+        <div class="body"><div class="br">Elements International</div><div class="nm">Martin Gray 5-Piece Dinette</div><div class="btm"><span class="pr">$599</span><span class="stk storeStk"><span class="dotpulse"></span> Prince George</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Room inspiration -->
+<section style="background:var(--sand)">
+  <div class="wrap">
+    <div class="shead cen"><div class="kicker cen">Room inspiration</div><h2>Get the look, <em>room by room.</em></h2></div>
+    <div class="rooms-grid">
+      <div class="room big rv"><img loading="lazy" decoding="async" src="assets/cat-living.jpg" alt="Cozy living room setup"><div class="ov"></div><div class="lbl"><h3>The cozy living room</h3><a class="tagbtn" href="shop.html">Shop this room <svg class="ic ic-line"><use href="#i-arrow"></use></svg></a></div></div>
+      <div class="room rv"><img loading="lazy" decoding="async" src="assets/local.jpg" alt="Bright modern living space"><div class="ov"></div><div class="lbl"><h3>Bright &amp; modern</h3><a class="tagbtn" href="shop.html">Shop the look</a></div></div>
+      <div class="room rv"><img loading="lazy" decoding="async" src="assets/cat-dining.jpg" alt="Dining room"><div class="ov"></div><div class="lbl"><h3>Dining to gather</h3><a class="tagbtn" href="shop.html">Shop dining</a></div></div>
+      <div class="room rv"><img loading="lazy" decoding="async" src="assets/cat-mattress.jpg" alt="Restful bedroom"><div class="ov"></div><div class="lbl"><h3>Restful bedroom</h3><a class="tagbtn" href="shop.html">Shop bedroom</a></div></div>
+      <div class="room rv"><img loading="lazy" decoding="async" src="assets/ugc3.jpg" alt="Warm inviting room"><div class="ov"></div><div class="lbl"><h3>Warm &amp; inviting</h3><a class="tagbtn" href="shop.html">Shop the look</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="rev-top">
+      <div class="shead"><div class="kicker"><svg class="ic ic-fill"><use href="#i-star"></use></svg> &nbsp;Loved across Western Canada</div><h2>Fifty years of <em>happy customers.</em></h2></div>
+      <div class="rev-score"><span class="num">50</span><div><div class="stars"><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg></div><div style="font-size:.85rem;color:var(--muted)">Years of trust, three generations of families</div></div></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card rv"><div class="stars"><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg></div><p>Bought our whole living room here and the delivery team set everything up the same week. The same family service my parents always talked about.</p><div class="who"><div class="av">JR</div><div><b>Janelle R.</b><span>Prince George, BC</span></div></div></div>
+      <div class="rev-card rv"><div class="stars"><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg></div><p>Great price on our new fridge and the financing made it simple. The staff actually know their products and there was no pressure at all.</p><div class="who"><div class="av">DM</div><div><b>Dave M.</b><span>Kamloops, BC</span></div></div></div>
+      <div class="rev-card rv"><div class="stars"><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg><svg class="ic ic-fill"><use href="#i-star"></use></svg></div><p>Three generations of our family have shopped here. They treat you like a neighbour, not a number, and they stand behind what they sell.</p><div class="who"><div class="av">PS</div><div><b>Priya S.</b><span>Grande Prairie, AB</span></div></div></div>
+    </div>
+    <p class="note-soft">Sample reviews shown to illustrate the layout. Your verified Google reviews connect on launch.</p>
+  </div>
+</section>
+
+<!-- Financing -->
+<section class="fin" id="financing">
+  <div class="wrap">
+    <div>
+      <div class="kicker" style="color:var(--gold)">Buy now, pay your way</div>
+      <h2>Flexible financing, <em>decided in minutes.</em></h2>
+      <p class="lead">Furnish the whole room today and pay over time, with friendly local staff to walk you through every option.</p>
+      <ul>
+        <li><svg class="ic ic-line"><use href="#i-check"></use></svg> Quick pre-approval, before you even visit the store</li>
+        <li><svg class="ic ic-line"><use href="#i-check"></use></svg> Plans that fit your budget on furniture and appliances</li>
+        <li><svg class="ic ic-line"><use href="#i-check"></use></svg> Clear terms, no surprises, real people to ask</li>
+      </ul>
+      <a href="financing.html" class="btn btn-on-dark">See financing options <svg class="ic ic-line"><use href="#i-arrow"></use></svg></a>
+    </div>
+    <div class="fin-card rv">
+      <div class="lbl">Approval time</div>
+      <div class="big">Minutes</div>
+      <p style="margin:14px 0 0;color:#cbd5ee">That is all it takes to find out what you qualify for.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Story -->
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="story-figure rv">
+      <img loading="lazy" decoding="async" src="assets/story.jpg" alt="City Furniture heritage">
+      <div class="est"><div class="yr">1976</div><div class="sub">Where it began</div></div>
+    </div>
+    <div>
+      <div class="kicker">Our story</div>
+      <h2>Built by one family, <em>brick by brick.</em></h2>
+      <p>City Furniture started with a single store in Prince George and a simple promise: treat every customer like a guest in your home. It began with hard work, little more than a dream, and the trust of the community.</p>
+      <blockquote>From nothing, into the stores three generations of families have grown up shopping in.</blockquote>
+      <p style="color:var(--muted)">Fifty years on, the same family still runs it, store by store, across Western Canada. Every location is locally owned by people who live where you live.</p>
+      <a href="story.html" class="btn btn-ghost" style="margin-top:8px">Read our story <svg class="ic ic-line"><use href="#i-arrow"></use></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- Milestone -->
+<section class="mile">
+  <div class="wrap">
+    <div class="mile-fig rv">
+      <span class="ribbon"><svg class="ic ic-fill"><use href="#i-leaf"></use></svg> 1976 - 2026</span>
+      <img loading="lazy" decoding="async" src="assets/anniversary.jpg" alt="Celebrating 50 years">
+    </div>
+    <div>
+      <div class="kicker">A milestone year</div>
+      <h2>Fifty years, and <em>just getting started.</em></h2>
+      <p class="lead">2026 marks 50 years since the first City Furniture opened its doors in Prince George. We are celebrating the way we always have: with the community that built us, all year long.</p>
+      <div class="mile-tags">
+        <span class="t"><svg class="ic"><use href="#i-flag"></use></svg> Anniversary golf tournament</span>
+        <span class="t"><svg class="ic"><use href="#i-gift"></use></svg> 50th-year savings</span>
+        <span class="t"><svg class="ic"><use href="#i-heart"></use></svg> Giving back to our towns</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UGC -->
+<section class="ugc">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Show us your space</div>
+      <h2>Got it home? <em>Tag us</em> and get rewarded.</h2>
+      <p class="lead">Post a photo of your new room and tag City Furniture. Real homes, real customers, and a thank you from us for sharing.</p>
+      <div class="reward">
+        <div class="r"><svg class="ic"><use href="#i-gift"></use></svg> Store credit</div>
+        <div class="r"><svg class="ic"><use href="#i-truck"></use></svg> Free delivery</div>
+        <div class="r"><svg class="ic ic-fill"><use href="#i-star"></use></svg> Featured on our page</div>
+      </div>
+    </div>
+    <div class="ugc-mosaic rv">
+      <figure><img loading="lazy" decoding="async" src="assets/ugc1.jpg" alt="Customer home"><figcaption>@yourhome</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/ugc2.jpg" alt="Customer home"><figcaption>#MyCityHome</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/ugc3.jpg" alt="Customer home"><figcaption>#CityFurniture</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/ugc4.jpg" alt="Customer home"><figcaption>@yourhome</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- Security -->
+<section class="sec">
+  <div class="wrap">
+    <div>
+      <div class="lock"><svg class="ic"><use href="#i-shield"></use></svg></div>
+      <div class="kicker">Shop with confidence</div>
+      <h2>Your information, protected to <em>bank standard.</em></h2>
+      <p class="lead">When you buy online, your details are handled with the same level of security the banks use. No shortcuts.</p>
+    </div>
+    <ul class="sec-list rv">
+      <li><svg class="ic ic-line"><use href="#i-check"></use></svg> Encrypted checkout on every page<small>Your connection is secured end to end with HTTPS.</small></li>
+      <li><svg class="ic ic-line"><use href="#i-check"></use></svg> Bank-grade payment processing<small>Card payments run on PCI-DSS certified systems. Card numbers are never stored on our servers.</small></li>
+      <li><svg class="ic ic-line"><use href="#i-check"></use></svg> Protected by a web firewall<small>A modern firewall and content network sit in front of the site to stop attacks before they reach it.</small></li>
+      <li><svg class="ic ic-line"><use href="#i-check"></use></svg> Staff access locked down<small>Secure sign-in with two-factor authentication, and regular backups of everything.</small></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Locations -->
+<section class="loc" id="locations">
+  <div class="wrap">
+    <div class="shead cen">
+      <div class="kicker cen">Find your store</div>
+      <h2>Locally owned, across <em>Western Canada.</em></h2>
+      <p class="lead" style="margin:16px auto 0">Tap your town to shop its local stock. New stores open every year.</p>
+    </div>
+    <div class="loc-grid" id="locGrid"></div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final">
+  <div class="final-img" style="background-image:url('assets/truck.jpg')"></div>
+  <div class="final-scrim"></div>
+  <div class="wrap">
+    <div class="kicker cen" style="color:var(--gold)">50 years, one click away</div>
+    <h2>The family service you know. Now online.</h2>
+    <p>Shop your local City Furniture store, with the same people and the same promise that have served Western Canada since 1976.</p>
+    <a href="shop.html" class="btn btn-on-dark">Start shopping <span class="storeCity">Prince George</span></a>
+  </div>
+</section>
+
+<!-- Footer -->
+<section class="newsletter"><div class="wrap"><div class="nl-inner"><div><h3>Save on your next room</h3><p>Join our list for flyers, 50th-anniversary deals and new arrivals at your local store.</p></div><form class="nl-form" onsubmit="return false"><input type="email" placeholder="Your email address" aria-label="Email"><button class="btn">Sign up</button></form></div></div></section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img class="foot-logo" src="assets/cfa-logo.png" alt="City Furniture &amp; Appliances">
+        <p style="color:#aeb9d6;max-width:34ch">Proudly Canadian and family-owned since 1976. Furniture, mattresses, appliances across Western Canada.</p><p style="margin-top:9px;font-family:'Fraunces',serif;font-style:italic;color:#fff;font-size:1.02rem">We don't sell. We help you buy.</p>
+        <p style="margin-top:12px"><a href="tel:+18338229306" style="display:inline;color:#fff;font-weight:600"><svg class="ic"><use href="#i-phone"></use></svg> +1 833 822 9306</a></p>
+      </div>
+      <div><h4>Shop</h4><a href="shop.html">Living Room</a><a href="shop.html">Mattresses</a><a href="shop.html">Appliances</a><a href="shop.html">Electronics</a><a href="shop.html">Made in Canada</a></div>
+      <div><h4>Company</h4><a href="story.html">Our story</a><a href="locations.html">Store locator</a><a href="financing.html">Financing</a><a href="business.html">Builders &amp; business</a><a href="deals.html">Deals &amp; flyers</a><a href="careers.html">Careers</a></div>
+      <div><h4>Connect</h4><a href="#" data-demo><svg class="ic"><use href="#i-ig"></use></svg> Instagram</a><a href="#" data-demo><svg class="ic ic-fill"><use href="#i-fb"></use></svg> Facebook</a><a href="locations.html">Visit a store</a><a href="tel:+18338229306">Call us</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span><svg class="ic ic-fill maple"><use href="#i-leaf"></use></svg> Proudly Canadian since 1976</span>
+      <span>&copy; 2026 City Furniture &amp; Appliances</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Store modal -->
+<div class="modal" id="storeModal">
+  <div class="modal-card">
+    <button class="modal-x" id="modalX" aria-label="Close">&times;</button>
+    <h3>Choose your store</h3>
+    <div class="sub">Pick your nearest location to see local stock and delivery.</div>
+    <div class="ms-list" id="msList"></div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
